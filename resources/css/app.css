@@ -7,3 +7,90 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Profile Mahasiswa */
+body {
+    background: #f4f7fb;
+    color: #1f2937;
+    font-family: var(--font-sans);
+}
+
+.navbar {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    padding: 18px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile-card {
+    background: white;
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e3f2fd;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+.profile-info {
+    text-align: left;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+}
+
+.profile-info p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.profile-info strong {
+    display: inline-block;
+    width: 90px;
+    color: #374151;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+
+    .status-badge {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+}

@@ -10,9 +10,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-light d-flex flex-column min-vh-100">
+<body>
 
-    <nav class="navbar navbar-dark bg-primary">
+    <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 UNPAM - Profile Mahasiswa
@@ -20,61 +20,50 @@
         </div>
     </nav>
 
-    <div class="container flex-grow-1">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+    <main class="container">
 
-                <div class="card mt-5">
+        <div class="profile-card">
 
-                    <div class="card-header bg-warning text-white text-center py-4">
+            <img
+                src="{{ asset('batik.jpeg') }}"
+                class="profile-photo"
+                alt="Foto Mahasiswa">
 
-                        <div class="d-flex justify-content-center mb-3">
-                            <img
-                                src="https://afif-e.my.id/storage/about/01KJ6JM4456EE46KM16GPJDP4X.png"
-                                class="rounded-circle img-thumbnail shadow-sm"
-                                style="width: 120px; height: 120px; object-fit: cover;"
-                                alt="">
-                        </div>
+            <h1 class="profile-name">Data Mahasiswa</h1>
 
-                        <h4 class="mb-0">Data Mahasiswa</h4>
+            <span class="status-badge">
+                {{ $mahasiswa['status'] }}
+            </span>
 
-                        <span class="badge bg-success">
-                            {{ $mahasiswa['status'] }}
-                        </span>
+            <div class="profile-info">
 
-                    </div>
+                <p>
+                    <strong>Nama</strong>
+                    : {{ $mahasiswa['nama'] }}
+                </p>
 
-                    <div class="card-body">
+                <p>
+                    <strong>NIM</strong>
+                    : {{ $mahasiswa['nim'] }}
+                </p>
 
-                        <p>
-                            <strong>Nama:</strong>
-                            {{ $mahasiswa['nama'] }}
-                        </p>
+                <p>
+                    <strong>Jurusan</strong>
+                    : {{ $mahasiswa['prodi'] }}
+                </p>
 
-                        <p>
-                            <strong>NIM:</strong>
-                            {{ $mahasiswa['nim'] }}
-                        </p>
-
-                        <p>
-                            <strong>Jurusan:</strong>
-                            {{ $mahasiswa['prodi'] }}
-                        </p>
-
-                        <p>
-                            <strong>Kampus:</strong>
-                            {{ $mahasiswa['kampus'] }}
-                        </p>
-
-                    </div>
-
-                </div>
+                <p>
+                    <strong>Kampus</strong>
+                    : {{ $mahasiswa['kampus'] }}
+                </p>
 
             </div>
-        </div>
-    </div>
 
-    <footer class="bg-light text-dark border-top text-center py-3 mt-auto">
+        </div>
+
+    </main>
+
+    <footer>
         <p>&copy; {{ date('Y') }} UNPAM. All rights reserved.</p>
     </footer>
 
