@@ -13,7 +13,7 @@
 
                         <div class="d-flex justify-content-center mb-3">
                             <img
-                                src="{{ asset('images/human.png') }}"
+                                src="{{ asset('batik.jpeg') }}"
                                 class="rounded-circle img-thumbnail shadow-sm"
                                 style="width: 120px; height: 120px; object-fit: cover;"
                                 alt="">
